@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>図形の並び - tdにclass付与版</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table id="myTable">
+        <tr>
+            <td class="col1" colspan="3"></td>
+            <td class="col2" colspan="3"></td>
+        </tr>
+        <tr>
+            <td class="col1" colspan="2"></td>
+            <td class="col2" colspan="2"></td>
+            <td class="col3" colspan="2"></td>
+        </tr>
+        <tr>
+            <td class="col1" colspan="4"></td>
+            <td class="col2" colspan="2"></td>
+        </tr>
+        <tr>
+            <td class="col1"></td>
+            <td class="col2"></td>
+            <td class="col3"></td>
+            <td class="col4"></td>
+            <td class="col5"></td>
+            <td class="col6"></td>
+        </tr>
+        <tr>
+            <td class="col1" colspan="6"></td>
+        </tr>
+    </table>
+
+    <form>
+        <label for="colorInput">色</label>
+        <input type="text" id="colorInput" placeholder="例: red, #FF5733">
+        <button type="button" class="btn" onclick="changeColumnsColor('odd')">奇数列</button>
+        <button type="button" class="btn" onclick="changeColumnsColor('even')">偶数列</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
